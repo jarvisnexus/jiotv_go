@@ -4,6 +4,7 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts": {
+    "docker-push:latest": "docker buildx build --tag=jarvisnexus/jiotvgo:latest --platform=linux/arm64 --push .",
     "build": "tailwindcss build -i ./static/input.css -o ./static/tailwind.css -m",
     "watch": "tailwindcss -i ./static/input.css -o ./static/tailwind.css -w"
   }
